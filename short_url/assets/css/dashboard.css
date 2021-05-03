@@ -45,9 +45,6 @@
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 20px;
-
-  /*background-color: black;*/
-
 }
 #box{
  background-color: white;
@@ -87,7 +84,6 @@ transition: all .2s;
 	justify-content: center;
 }
 #qr_box{
-	/*background-image: url('https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=www.arghapaul.epizy.com&choe=UTF-8%22');*/
 	height: 140px;
 	width: 140px;
 	background-position: center;

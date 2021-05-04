@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#main{
+	height: 100vh;
+	width: 100vw;
+}
+#jumbotron{
+	background-color: #00B597;
+	height: 20%;
+	width: 100vw;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+#form_container{
+	width:50vw;
+}
+#text_search_container{
+	background-color:white;
+}
+.input-group-text{
+	background-color: transparent;
+	border-style: none;
+}
+.form-group input{
+	background-color: transparent;
+	border-style: none;
+	border-radius: 0;
+	height: 45px;
+}
+.form-group input::placeholder{
+	color:#ddd;
+}
+#parent{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e2f3f5;
+}
+#data_containers{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+
+  /*background-color: black;*/
+
+}
+#box{
+ background-color: white;
+ box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+ margin: 10px;
+ display: grid;
+grid-template-columns: 140px 260px;
+padding: 10px;
+transition: all .2s;
+}
+#contents{
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#contents #head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top:5px; 
+}
+#contents #head h4{
+	margin-right: 0;
+	font-size: 1.6vw;
+}
+#contents #head h5{
+	font-size: 1vw;
+}
+#contents p{
+	font-size: 1vw;
+	white-space: nowrap;
+}
+#qr_box_container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#qr_box{
+	/*background-image: url('https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=www.arghapaul.epizy.com&choe=UTF-8%22');*/
+	height: 140px;
+	width: 140px;
+	background-position: center;
+	background-size: 100% 100%;
+}
+.delete_link{
+	margin-right: 15px;
+	text-decoration: none;
+}
+
+input:focus{
+	background-color: transparent;
+	box-shadow: none!important;
+	outline: none!important;
+}
+#contents a{
+	color: #00B597;
+}
+.orginal_url_text:hover{
+	color: #00B597;
+}
+.delete_link{
+	color: #d9534f;
+}
+.delete_link:hover{
+	color: #d9534f;
+}
+@media screen and (max-width:992px){
+	#main{
+		display: none;
+	}
+}

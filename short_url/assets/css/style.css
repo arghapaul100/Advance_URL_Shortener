@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+.blur{
+  filter: blur(10px);
+}
+.navbar-brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-brand .fa-link{
+    color: #00B597;
+    margin: 10px;
+}
+#our_dashboard_btn{
+    background-color: #DEFFF9;
+    color: #00B597;
+    font-weight: 600;
+}
+#bg_img{
+    background-image: url('../images/url_image.svg');
+    background-size: 100% 100%;
+    height: 500px;
+    width: 400px;
+}
+#input_field form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#input_field form #text_icon_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 82%;
+    border-radius: 0;
+    height: 45px;
+    background-color: #f2f2f2;
+}
+#input_field form #text_icon_container #url{
+    border-style: none;
+    background-color: transparent;
+    padding-left: 5px; 
+}
+#input_field form #text_icon_container #url::placeholder{
+    color: #AAAAAA;
+}
+#input_field form #text_icon_container #url_link_image_for_textbox{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#heading{
+    font-weight: 600;
+    font-size: 4vw;
+}
+#title{
+    font-weight: 300;
+    font-size: 1.3vw;
+}
+#free_forever_tag{
+    color: #00B597;
+}
+#btn_shortener{
+    border-radius: 0px;
+    background-color: #00B597;
+    color: white;
+    padding: 10px;
+    height: 45px;
+}
+#sec_column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sec_col_child{
+    width: 100%
+}
+
+input:focus,button:focus{
+    box-shadow: none!important;
+    outline: none!important;
+}
+.link ,.title, .copy{
+    color: #00B597;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.copy{
+  color: rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+.copy:hover{
+  color: rgba(0,0,0,0.9);
+}
+#popup_url_icon_container{
+  width: 40px;
+}
+#url_link_image_for_textbox #text_box_url_favicon{
+  height: 30px;
+  width: 30px;
+  background-size: 100% 100%;
+}
+
+#popup_modal{
+  position: absolute;
+  height: 80%;
+  width: 28%;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#popup_child{
+  margin-top: 5%;
+  width: 95%;
+  margin-left: 5px;
+}
+#popup_modal #popup_child{
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#generated_child_url_container, #title_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+#title_container{
+  margin-bottom: 10px;
+}
+#txt_generated_url, #url_title{
+  background-color: transparent;
+  border-radius: 0px;
+  border-style: none;
+}
+#txt_generated_url::placeholder,#url_title::placeholder{
+    color: #AAAAAA;
+}
+
+#qr_code{
+  /*background-image: url('https://chart.googleapis.com/chart?chs=500x500&cht=qr&chl=www.samareshadakportfolio.epizy.com&choe=UTF-8%22');*/
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: auto;
+}
+#popup_inner_child{
+  padding-bottom: 0px;
+}
+#btn_save_container{
+  padding: 10px 0 0 0;
+}
+#btn_save{
+  border-radius: 0px;
+  background-color: #00B597;
+  color: white;
+}
+@media screen and (max-width: 992px){
+  #outer{
+    display: none;
+  }
+}
